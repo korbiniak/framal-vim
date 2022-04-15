@@ -1,26 +1,14 @@
-vim.cmd [[colorscheme gruvbox]]
+-- vim.cmd [[let $NVIM_TUI_ENABLE_TRUE_COLOR=1]]
+-- vim.cmd [[let g:gruvbox_italic=1]]
 
--- local Plug = require 'vimplug'
+vim.opt.termguicolors = true
+vim.o.background = "dark" -- or "light" for light mode
+vim.cmd([[colorscheme gruvbox]])
 
--- Plug.begin('~/.config/share/nvim/plugged')
--- 
--- Plug 'https://github.com/vim-airline/vim-airline'
--- Plug 'https://github.com/rafi/awesome-vim-colorschemes'
--- Plug 'https://github.com/preservim/nerdtree'
--- Plug 'https://github.com/neovim/nvim-lspconfig'
--- Plug 'https://github.com/williamboman/nvim-lsp-installer'
--- Plug 'https://github.com/hrsh7th/nvim-cmp'
--- Plug 'https://github.com/hrsh7th/cmp-nvim-lsp'
--- Plug 'https://github.com/hrsh7th/cmp-buffer'
--- Plug 'https://github.com/hrsh7th/cmp-path'
--- Plug 'https://github.com/hrsh7th/cmp-cmdline'
--- Plug 'https://github.com/hrsh7th/nvim-cmp'
--- Plug 'https://github.com/L3MON4D3/LuaSnip'
--- Plug 'https://github.com/rafamadriz/friendly-snippets'
--- Plug 'https://github.com/saadparwaiz1/cmp_luasnip'
--- Plug 'https://github.com/nvim-lua/popup.nvim'
--- Plug 'https://github.com/nvim-lua/plenary.nvim'
--- 
--- Plug.ends()
--- 
--- vim.cmd [[colorscheme gruvbox]]
+vim.cmd [[autocmd BufWinLeave *.* mkview]]
+vim.cmd [[autocmd BufWinLeave *.* silent loadview]]
+vim.cmd [[autocmd VimEnter *.* AlphaReady]]
+
+vim.cmd [[highlight Normal ctermbg=none]]
+vim.cmd [[highlight NonText ctermbg=none]]
+vim.cmd [[highlight clear SignColumn]]

@@ -41,8 +41,12 @@ return packer.startup(function(use)
   use "nvim-lua/plenary.nvim"
 
   use "vim-airline/vim-airline"
-  use "rafi/awesome-vim-colorschemes"
+  use "vim-airline/vim-airline-themes"
+  -- use "itchyny/lightline.vim"
   use "preservim/nerdtree"
+  use "tiagofumo/vim-nerdtree-syntax-highlight"
+  use "kyazdani42/nvim-web-devicons"
+  use "ryanoasis/vim-devicons"
 
   use 'hrsh7th/nvim-cmp'
   use 'hrsh7th/cmp-nvim-lsp'
@@ -60,11 +64,32 @@ return packer.startup(function(use)
 
   use 'nvim-telescope/telescope.nvim'
   use 'nvim-telescope/telescope-media-files.nvim'
+  use "nvim-telescope/telescope-ui-select.nvim"
 
   use {
 	'nvim-treesitter/nvim-treesitter',
 	run = ":TSUpdate",
   }
+
+  use 'cxw42/editorconfig-vim'
+  use 'morhetz/gruvbox'
+  -- use "ellisonleao/gruvbox.nvim"
+
+  use 'rhlobo/vim-super-retab'
+  use "ahmedkhalf/project.nvim"
+
+  use 'lewis6991/impatient.nvim'
+  use 'karb94/neoscroll.nvim'
+
+  use 'JoosepAlviste/nvim-ts-context-commentstring'
+  use "numToStr/Comment.nvim"
+
+  use "moll/vim-bbye"
+  use "akinsho/bufferline.nvim"
+
+  use "goolord/alpha-nvim"
+  use "Shatur/neovim-session-manager"
+
   if PACKER_BOOTSTRAP then
 	require("packer").sync()
   end
