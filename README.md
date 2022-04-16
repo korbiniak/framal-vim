@@ -15,7 +15,7 @@ My Neovim configuration, highly based on an excellent tutorial series by
 [chris@machine](https://www.youtube.com/watch?v=ctH-a-1eUME&list=PLhoH5vyxr6Qq41NFL4GvhFp-WLd5xzIzZ&ab_channel=chris%40machine)
 and [Lunar vim](https://github.com/LunarVim/LunarVim)
 
-I manager plugins with packer. Plugins I use:
+I manage plugins with packer. Plugins I use:
 
 - lualine,
 - nvim-tree,

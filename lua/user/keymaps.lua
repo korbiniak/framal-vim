@@ -20,7 +20,7 @@ vim.g.maplocalleader = " "
 -- keymap("n", "<C-t>", ":NERDTreeToggle<CR>", opts)
 
 -- NvimTree keybindings
-keymap("n", "<C-t>", ":NvimTreeToggle<CR>", opts)
+keymap("n", "<space>t", ":NvimTreeToggle<CR>", opts)
 
 -- Resizing windows (like i3)
 keymap("n", "<C-S-Up>", ":resize -2<CR>", opts)
