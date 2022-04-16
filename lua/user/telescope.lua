@@ -4,21 +4,15 @@ if not status_ok then
   return
 end
 
-telescope.load_extension('media_files')
-telescope.load_extension('ui-select')
-
 local actions = require "telescope.actions"
+local pls_work = "ui-select"
+
 
 telescope.setup {
   defaults = {
     prompt_prefix = " ",
     selection_caret = " ",
 
-    extensions = {
-      ["ui-select"] = {
-        require("telescope.themes").get_dropdown {}
-      }
-    },
 
     mappings = {
       i = {
@@ -85,4 +79,13 @@ telescope.setup {
       },
     },
   },
+
+  extensions = {
+	['ui-select'] = {
+	  require("telescope.themes").get_dropdown({}),
+	}
+  },
 }
+
+telescope.load_extension('media_files')
+telescope.load_extension('ui-select')

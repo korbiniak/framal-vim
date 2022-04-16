@@ -1,6 +1,3 @@
--- vim.cmd [[let $NVIM_TUI_ENABLE_TRUE_COLOR=1]]
--- vim.cmd [[let g:gruvbox_italic=1]]
-
 vim.opt.termguicolors = true
 vim.o.background = "dark" -- or "light" for light mode
 vim.cmd([[colorscheme gruvbox]])

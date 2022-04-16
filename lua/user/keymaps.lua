@@ -53,3 +53,7 @@ keymap("n", "<leader>h", "<cmd>Telescope oldfiles<CR>", opts)
 -- Session Manager
 keymap("n", "<leader>sl", "<cmd>SessionManager load_last_session<CR>", opts)
 keymap("n", "<leader>ss", "<cmd>SessionManager save_current_session<CR>", opts)
+keymap("n", "<leader>so", "<cmd>SessionManager load_session<CR>", opts)
+
+-- Bbye
+keymap("n", "<leader>q", "<cmd>Bdelete<CR>", opts)

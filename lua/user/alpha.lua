@@ -26,11 +26,12 @@ local header = {
 local buttons = {
     type = "group",
     val = {
-        button("e", "  New file", "<cmd>ene <CR>"),
+        button("e", "  New file", "<cmd>ene<CR>"),
+		button("SPC s l", "  Open last session"),
+		button("SPC s o", "  Choose session"),
         button("SPC f", "  Find file"),
         button("SPC h", "  Recently opened files"),
         button("SPC g", "  Find word"),
-        button("SPC s l", "  Open last session"),
     },
     opts = {
         spacing = 1,
