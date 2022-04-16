@@ -13,6 +13,7 @@ require "user.bufferline"
 require "user.alpha"
 require "user.session-manager"
 require "user.telescope"
+require "user.nvimtree"
 
 -- Those should be called last
 require "user.keymaps"

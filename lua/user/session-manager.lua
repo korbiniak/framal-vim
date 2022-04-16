@@ -8,3 +8,5 @@ session_manager.setup({
   sessions_dir = Path:new(vim.fn.stdpath('data'), '.sessions'),
   autoload_mode = require("session_manager.config").AutoloadMode.Disabled,
 })
+
+vim.cmd('autocmd User SessionLoadPost lua require"nvim-tree".toggle(false, true)')

@@ -43,8 +43,9 @@ return packer.startup(function(use)
   use "vim-airline/vim-airline"
   use "vim-airline/vim-airline-themes"
   -- use "itchyny/lightline.vim"
-  use "preservim/nerdtree"
-  use "tiagofumo/vim-nerdtree-syntax-highlight"
+  -- use "preservim/nerdtree"
+  -- use "tiagofumo/vim-nerdtree-syntax-highlight"
+  use "kyazdani42/nvim-tree.lua"
   use "kyazdani42/nvim-web-devicons"
   use "ryanoasis/vim-devicons"
 
@@ -89,8 +90,10 @@ return packer.startup(function(use)
   use "akinsho/bufferline.nvim"
 
   use "goolord/alpha-nvim"
-  use "Shatur/neovim-session-manager"
-
+  use {
+	"Shatur/neovim-session-manager",
+	commit = "2d42185c859907ab600dd2d0ebd8d1764eec5b58"
+  }
   if PACKER_BOOTSTRAP then
 	require("packer").sync()
   end

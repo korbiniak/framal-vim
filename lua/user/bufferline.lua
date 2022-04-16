@@ -25,7 +25,7 @@ bufferline.setup {
 	diagnostics_update_in_insert = false,
 	offsets = {
 	  {
-		filetype = "nerdtree",
+		filetype = "NvimTree",
 		text = "Files",
 		highlight = "Directory",
 		text_align = "center"

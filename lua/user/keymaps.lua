@@ -16,8 +16,11 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
 -- NERDTree keybindings
-keymap("n", "<C-n>", ":NERDTree<CR>", opts)
-keymap("n", "<C-t>", ":NERDTreeToggle<CR>", opts)
+-- keymap("n", "<C-n>", ":NERDTree<CR>", opts)
+-- keymap("n", "<C-t>", ":NERDTreeToggle<CR>", opts)
+
+-- NvimTree keybindings
+keymap("n", "<C-t>", ":NvimTreeToggle<CR>", opts)
 
 -- Resizing windows (like i3)
 keymap("n", "<C-S-Up>", ":resize -2<CR>", opts)
