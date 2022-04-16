@@ -2,6 +2,7 @@
 require "user.plugins"
 
 -- Specific configuration for those plugins
+require "user.lualine"
 require "user.cmp"
 require "user.lsp"
 require "user.treesitter"

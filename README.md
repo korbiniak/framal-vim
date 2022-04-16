@@ -17,8 +17,8 @@ and [Lunar vim](https://github.com/LunarVim/LunarVim)
 
 I manager plugins with packer. Plugins I use:
 
-- vim-airline,
-- nvim-tree ,
+- lualine,
+- nvim-tree,
 - nvim-cmp with additions,
 - cmp_luasnip,
 - nvim-lspconfig,

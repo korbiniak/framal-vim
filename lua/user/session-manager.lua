@@ -9,4 +9,4 @@ session_manager.setup({
   autoload_mode = require("session_manager.config").AutoloadMode.Disabled,
 })
 
-vim.cmd('autocmd User SessionLoadPost lua require"nvim-tree".toggle(false, true)')
+-- vim.cmd('autocmd User SessionLoadPost lua require"nvim-tree".toggle(false, true)')

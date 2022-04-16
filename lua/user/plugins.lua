@@ -40,11 +40,7 @@ return packer.startup(function(use)
   use "nvim-lua/popup.nvim"
   use "nvim-lua/plenary.nvim"
 
-  use "vim-airline/vim-airline"
-  use "vim-airline/vim-airline-themes"
-  -- use "itchyny/lightline.vim"
-  -- use "preservim/nerdtree"
-  -- use "tiagofumo/vim-nerdtree-syntax-highlight"
+  use "nvim-lualine/lualine.nvim"
   use "kyazdani42/nvim-tree.lua"
   use "kyazdani42/nvim-web-devicons"
   use "ryanoasis/vim-devicons"
