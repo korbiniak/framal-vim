@@ -86,10 +86,7 @@ return packer.startup(function(use)
   use "akinsho/bufferline.nvim"
 
   use "goolord/alpha-nvim"
-  use {
-	"Shatur/neovim-session-manager",
-	commit = "2d42185c859907ab600dd2d0ebd8d1764eec5b58"
-  }
+  use "Shatur/neovim-session-manager"
   if PACKER_BOOTSTRAP then
 	require("packer").sync()
   end
