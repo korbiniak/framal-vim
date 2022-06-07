@@ -71,6 +71,7 @@ return packer.startup(function(use)
   use 'cxw42/editorconfig-vim'
   use 'morhetz/gruvbox'
   use "lunarvim/colorschemes"
+  use "freeo/vim-kalisi"
   -- use "ellisonleao/gruvbox.nvim"
 
   use 'rhlobo/vim-super-retab'

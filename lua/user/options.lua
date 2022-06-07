@@ -15,6 +15,7 @@ local options = {
   updatetime = 300,
   splitright = true,
   splitbelow = true,
+  ignorecase = true,
   smartcase = true,
   mouse = "a",
   fileencoding = "utf-8",
